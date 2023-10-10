@@ -32,7 +32,7 @@ export async function POST(req: NextRequest, { params }: { params: { myText: str
   }
 
   if (letterToRemove.length > 1) {
-    errorText = "character to remove must be exactly one character long.";
+    errorText = "Error: character to remove must be exactly one character long.";
     return new NextResponse(
       JSON.stringify({
         success: false,
